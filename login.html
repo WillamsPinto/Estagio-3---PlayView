@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="_css/style.css" media="screen" />
+        <script src="_css/_javascript/script.js"></script>
+
+        <!--------------------- Bootstrap ---------------------------->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <title>Login</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html" style="font-family: bangers; font-size: 180%; padding-bottom:0px ;">PlayView</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    
+                </nav>
+                <div class="container-fluid" id="menu2" style="padding-bottom: 10px;">
+                    <ul style="list-style-type: none;">
+                        <div class="row">    
+                            <li class="col-sm"><a href="#cursos" style="color: white;"> Cursos</a></li>
+                            <li class="col-sm"><a href="#Sobre" style="color: white;">Sobre</a></li>
+                            <li class="col-sm"></li>
+                            <li class="col-sm"></li>
+                        </div>
+                    </ul>
+            </div>
+   </header>
+
+
+   <table align="center">
+    <ul style="list-style-type: none;">
+        <td   align="center" height='300px'; >
+            <img src="./_img/capa.png" width="40%">
+        </td>
+        
+        <td>
+            <fieldset>
+                <table cellspacing="10" >
+                    <tr>
+                        <td>Login:</td>
+                        <td align="left">
+                            <input type ="text" name="CPFLogin" size= "52" maxlength="20" placeholder="CPF" required="required" >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Senha:</td>
+                        <td align="left">
+                            <input type ="password" name="senha" size= "52" maxlength="20" placeholder="******" required="required">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <table cellspacing="3" ALIGN = "right" >
+                                <td>
+                                    <form action="" method="post">
+                                        <input type="submit" name="submit" value="Entrar">
+                                    </form>
+                                </td>
+                                
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                
+                <form action="cadastro.html" method="get">
+                    <input  type="submit" value="Cadastrar">
+                </form>					
+            </fieldset>
+            
+        </td></tr>
+    </table>
+    </ul>
+</div>
+
+
+
+            <br>
+            
+            
+          
+
+            <div id="rodape">
+            <footer id="rodape">
+                <p>Copyright &copy; 2020 - SM<br/>
+                <a href="http://facebook.com" target="_blank"> Facebook </a>|
+                <a href="http://instagram.com" target="_blank"> Instagram</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
