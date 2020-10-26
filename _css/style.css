@@ -73,6 +73,11 @@ div#menu ul{
 
 }
 
+#menu2 .row{
+    margin: 0px auto 0px 10%;
+}
+
+
 #vistosRecentemente{
     transform: rotate(2deg);
     margin:15px;
