@@ -98,3 +98,26 @@ footer#rodape p{
     text-align: center;
 }
 
+/*login*/
+fieldset#login {
+	position: absolute;
+	top: 37px;
+	right: 1px; 
+	height: 28px;
+	padding: 10px;
+}
+
+fieldset#login {
+	position: absolute;
+	right: 1px; 
+	padding-top: 2px;
+	padding-bottom: 10px;
+}
+
+
+fieldset#login a{
+	color: black ;	
+	text-decoration: none;
+	font-size: 10px;
+	padding: 2px;
+}
