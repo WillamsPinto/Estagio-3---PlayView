@@ -126,3 +126,33 @@ fieldset#login a{
 	font-size: 10px;
 	padding: 2px;
 }
+
+*Destaque*/
+
+div#destque{
+	margin:10px;
+}
+
+img#banner{
+    filter:grayscale(30%);
+    width:500px;
+    height:260px;
+    background-size:cover;
+}
+
+/*Imagens*/
+div.curso:hover {
+    border: 1px solid #777;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+div.curso img {
+    width: 100px;
+    height: auto;
+}
+
+div.curso p {
+	font-family:Palatino Linotype;
+	text-align: center;
+}

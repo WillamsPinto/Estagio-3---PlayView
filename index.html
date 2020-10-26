@@ -49,7 +49,108 @@
             </div>
             </header>
 
+            <div align="center" id="destaque">
 
+
+                <script language="JavaScript">
+                    var bannerAD=new Array();
+                    var adNum=0;
+            
+            
+                    bannerAD[0]="./_img/destaque/aula.jpg";
+                    bannerAD[1]="./_img/destaque/ead.jpg";
+                    bannerAD[2]="./_img/destaque/ead1.jpg";
+                    bannerAD[3]="./_img/destaque/ead2.jpg";
+            
+            
+                    var preloadedimages=new Array();
+                        for (i=1;i<bannerAD.length;i++){
+                            preloadedimages[i]=new Image();
+                            preloadedimages[i].src=bannerAD[i];
+                        }
+            
+                    function setTransition(){
+                        if (document.all){
+                            bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23);
+                            bannerADrotator.filters.revealTrans.apply();
+                        }
+                    }
+            
+                    function playTransition(){
+                        if (document.all)
+                            bannerADrotator.filters.revealTrans.play()
+                    }
+            
+                    function nextAd(){
+                        if(adNum<bannerAD.length-1)adNum++;
+                        else adNum=0;
+                            setTransition();
+                            document.images.bannerADrotator.src=bannerAD[adNum];
+                            playTransition();
+                            theTimer=setTimeout("nextAd()", 5000);
+                    }
+            
+                    function jump2url(){
+                        jumpUrl=bannerADlink[adNum];
+                        jumpTarget='_self';
+                        if (jumpUrl != ''){
+                        if (jumpTarget != '')window.open(jumpUrl,jumpTarget);
+                        else location.href=jumpUrl;
+                        }
+                    }
+            
+                    function displayStatusMsg() { 
+                        status=bannerADlink[adNum];
+                        document.returnValue = true;
+                    }
+                </script>
+            
+                <p></p>
+                <BANNERAD>
+                    <img src="./_img/destaque/aula.jpg"; id='banner' name="bannerADrotator" style="filter:revealTrans(duration=3,transition=20)" height= "370px" >
+                    <script language="JavaScript">nextAd()</script>
+                </BANNERAD>
+                    
+                   
+                <hr class="style1">
+                
+                <table>
+                    <h3> Cursos</h3>
+                    <p></p>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="curso">
+                                    <a target="_blank" href="./_img/_icon/python.png">
+                                        <img src= "./_img/_icon/python.png" align="right" class= "imagen" >
+                                    </a>
+                                <b><p>Python</p></b>
+                            </div>
+                        </div>
+                        <td>
+                        <td>
+                            <div class="imagen">
+                                <div class="curso">
+                                    <a target="_blank" href="./_img/_icon/html.png">
+                                        <img src= "./_img/_icon/html.png" align="right" class= "imagen" >
+                                    </a>
+                                <b><p>Html</p></b>
+                            </div>
+                        
+                        </div>
+                        <td>
+                        <td>
+                            <div class="imagen">
+                                <div class="curso">
+                                    <a target="_blank" href="./_img/_icon/arduino.png">
+                                        <img src= "./_img/_icon/arduino.png" align="right" class= "imagen" >
+                                    </a>
+                                <b><p>Arduino</p></b>
+                            </div>
+                        </div>
+                        <td>
+                    <tr>
+                </table>
 
                 <!------------------------------ JQuery -------------------------------->
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
