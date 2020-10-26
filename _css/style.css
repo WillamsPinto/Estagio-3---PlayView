@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body{
+    background-size: 100%;
+    background-image: url(./img/wpp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+div#popupPerfil{
+    position: absolute;
+    top: 90%;
+    margin: auto;
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    border: solid 2px black;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
+    display: none;
+    box-sizing: border-box;
+
+}
+
+div#popupPerfil ul{
+    list-style: none;
+}
+
+#animesVistos{
+    padding-right: 25px;
+    color: black;
+    font-family: 'Bangers';
+
+    width:500px;
+    height:200px;
+    background:#fff;
+    border: solid black;
+    border-color: #3d844b;
+
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(deg);
+}
+
+#textCenter{
+    transform: rotate(deg);
+    margin:15px;
+    padding:0 5px;
+    background:#ddd;
+    border:1px solid black;
+    box-shadow:3px 3px 0 black;
+}
+
+div#menu ul{
+    list-style: none;
+    list-style-type: none;
+    margin: auto;
+    position: absolute;
+    margin: -15px 30% -15px 30%;
+}
+
+#menu2{
+    padding-top: 10px;
+    height: 40px;
+    background-color: #3d844b;
+    font-family: 'Bangers';
+
+    border-bottom: solid 1px white;
+
+}
+
+#vistosRecentemente{
+    transform: rotate(2deg);
+    margin:15px;
+    padding:0 5px;
+    background:white;
+    border: 10px solid white;
+    box-shadow:3px 3px 0#3d844b;
+}
+
+div#interface{
+    background-color: #dddddd;
+}
+
+
+/* Rodape */
+footer#rodape{
+    margin-top: 10px;
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
