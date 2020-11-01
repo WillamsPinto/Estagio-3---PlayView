@@ -110,7 +110,8 @@ fieldset#login {
 	position: absolute;
 	top: 37px;
 	right: 1px; 
-	height: 28px;
+    height: 28px;
+    width:auto;
 	padding: 10px;
 }
 
