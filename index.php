@@ -1,4 +1,4 @@
 <?php
-  include_once("loginy.html");
+  include_once("stro.html");
 
 ?>
