@@ -160,3 +160,14 @@ div.curso p {
 	font-family:Palatino Linotype;
 	text-align: center;
 }
+
+div #texto h3{
+    color: #3d844b; 
+    text-align:center; 
+    margin:10px;
+}
+
+div #texto p{
+    text-align:justify; 
+    margin:10px;
+}
