@@ -1,4 +1,4 @@
 <?php
-  include_once("stro.html");
+  include_once("index.html");
 
 ?>
