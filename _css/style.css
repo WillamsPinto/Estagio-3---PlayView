@@ -94,13 +94,15 @@ div#interface{
 
 /* Rodape */
 footer#rodape{
-    margin-top: 10px;
+    background-color: #dddddd;
+    width: 100%;
     clear: both;
     border-top: 1px solid #606060;
 }
 
 footer#rodape p{
     text-align: center;
+    width: 100%;
 }
 
 /*login*/
