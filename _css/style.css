@@ -136,10 +136,15 @@ div#destque{
 }
 
 img#banner{
-    filter:grayscale(30%);
+    filter:grayscale(20%);
     width:500px;
-    height:260px;
+    height:300px;
     background-size:cover;
+}
+
+h4#destaque{
+    background: linear-gradient(to bottom, #3d844b 0%, #606060 100%);
+    padding: 15px;
 }
 
 /*Imagens*/
@@ -151,10 +156,26 @@ div.curso:hover {
 
 div.curso img {
     width: 100px;
-    height: auto;
+    height: 90px;
+    align:center;
 }
 
 div.curso p {
 	font-family:Palatino Linotype;
 	text-align: center;
 }
+
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #3d844b;
+    padding: 0.5em 10px;
+    width:55%;
+  }
+  
+  blockquote p {
+    display: inline;
+    font-size: 11px;
+    align: left;
+    font-family: "Lucida Console", Courier, monospace;
+  }
