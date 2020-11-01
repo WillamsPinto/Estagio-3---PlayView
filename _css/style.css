@@ -147,10 +147,11 @@ img#banner{
 div.curso:hover {
     border: 1px solid #777;
 	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    filter: grayscale(100%);
+    align:center;
 }
 
-div.curso img {
+img#destaque {
     width: 100px;
     height: 90px;
     align:center;
@@ -158,10 +159,19 @@ div.curso img {
 
 div.curso p {
 	font-family:Palatino Linotype;
-	text-align: center;
+    text-align: center;
+    color: black;
 }
 
-div #texto h3{
+div.curso h5 {
+    margin:0;
+    margin-top:20px;
+    border:2px solid #3d844b;
+    background: #3d844b;
+    color: white;
+}
+
+div#texto h3{
     color: #3d844b; 
     text-align:center; 
     margin:10px;
@@ -171,3 +181,20 @@ div #texto p{
     text-align:justify; 
     margin:10px;
 }
+
+img#curso {
+    width: 200px;
+    height:200px;
+    align:center;
+}
+
+
+p#curso{
+	font-family:Palatino Linotype;
+    text-align:justify; 
+    margin:2px;
+    max-width: 300px;
+}
+
+
+
