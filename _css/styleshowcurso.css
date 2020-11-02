@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+div.Logocurso {
+    margin-top: 5%;
+}
 div.Logocurso img {
     height: 25%;
 }
@@ -8,8 +11,20 @@ div.infocurso img#linha {
     height: 15%;
 }
 
+div.apresentacaocurso iframe{
+    margin: auto auto 5% 30%;
+    
+}
 div.descricao p{
     text-align: justify;
     font-size: 12pt;
-    margin: 5%;
+    margin: 5% 5% 5% 5% ;
+}
+
+div.conteudo {
+    border: 1px solid #777;
+}
+
+div.conteudo table, h2{
+    margin: 5% 5% auto 15%;
 }
