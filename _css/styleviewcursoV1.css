@@ -25,6 +25,7 @@ header#sumario h4{
     text-align: center;
 }
 
+
 nav ul{
     list-style:none;
     margin:5px 0;
@@ -77,10 +78,13 @@ ol {
 #home{
     margin-left:0;
 }
+#apostila:target ~ header #link-apostila a,
 #unidade:target ~ header #link-unidade a,
 #aula1:target ~ header #link-aula1 a,
-#apostila:target ~ header #link-apostila a,
-#contact:target ~ header #link-contact a{
+#aula1.2:target ~ header #link-aula1.2 a,
+#aula1.3:target ~ header #link-aula1.3 a,
+#aula2:target ~ header #link-aula2 a,
+#dica01:target ~ header #link-dica01 a{
     background: #333;
     color: #fff;
 }
