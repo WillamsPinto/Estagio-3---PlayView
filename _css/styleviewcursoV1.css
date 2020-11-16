@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 embed{
     height: 400px;
     width: 900px;
@@ -11,7 +12,7 @@ header#sumario{
     position: fixed;
     border: 8px solid gray;  
     margin-left: 2px;
-    width:20%;
+    width:28%;
     height: 100%;
     background: #dddddd;
     position: absolute;
@@ -81,10 +82,24 @@ ol {
 #apostila:target ~ header #link-apostila a,
 #unidade:target ~ header #link-unidade a,
 #aula1:target ~ header #link-aula1 a,
+#atividade1:target ~ header #link-atividade1 a,
 #aula1.2:target ~ header #link-aula1.2 a,
 #aula1.3:target ~ header #link-aula1.3 a,
 #aula2:target ~ header #link-aula2 a,
-#dica01:target ~ header #link-dica01 a{
+#dica01:target ~ header #link-dica01 a,
+#unidade2:target ~ header #link-unidade2 a,
+#aula3:target ~ header #link-aula3 a,
+#aula3.2:target ~ header #link-aula3.2 a,
+#aula3.3:target ~ header #link-aula3.3 a,
+#aula4:target ~ header #link-aula4 a,
+#aula5.1:target ~ header #link-aula5.1 a,
+#aula5.1.2:target ~ header #link-aula5.1.2 a,
+#aula5.2:target ~ header #link-aula5.2 a,
+#aula6:target ~ header #link-aula6 a,
+#aula7.1:target ~ header #link-aula7.1 a,
+#aula7.2:target ~ header #link-aula7.2 a,
+#aula8:target ~ header #link-aula8 a,
+#aula9:target ~ header #link-aula9 a{
     background: #333;
     color: #fff;
 }
@@ -189,4 +204,27 @@ figure. img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+label{
+    padding: 10px;
+    padding-left: 38px;
+    position: relative;
+    font-size: 1em;
+    line-height: normal;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    clear: both;
+    margin-bottom: 10px;
+    border: 2px solid #e4e4e4;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    color: #313131;
+    font: italic 300 1rem/1.6rem Georgia,Cambria,"Times New Roman",Times,serif;
+    margin-bottom: 5px;
+    text-shadow: 0 1px rgba(255,255,255,0.4);
+    -webkit-font-smoothing: antialiased;
 }
