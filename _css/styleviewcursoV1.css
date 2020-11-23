@@ -91,14 +91,20 @@ ol {
 #aula3:target ~ header #link-aula3 a,
 #aula3.2:target ~ header #link-aula3.2 a,
 #aula3.3:target ~ header #link-aula3.3 a,
-#aula4:target ~ header #link-aula4 a,
+#aula4.1:target ~ header #link-aula4.1 a,
+#aula4.2:target ~ header #link-aula4.2 a,
 #aula5.1:target ~ header #link-aula5.1 a,
 #aula5.1.2:target ~ header #link-aula5.1.2 a,
 #aula5.2:target ~ header #link-aula5.2 a,
-#aula6:target ~ header #link-aula6 a,
+#aula6.1:target ~ header #link-aula6.1 a,
+#aula6.2:target ~ header #link-aula6.2 a,
 #aula7.1:target ~ header #link-aula7.1 a,
 #aula7.2:target ~ header #link-aula7.2 a,
-#aula8:target ~ header #link-aula8 a,
+#aula8.1:target ~ header #link-aula8.1 a,
+#aula8.2:target ~ header #link-aula8.2 a,
+#aula8.3:target ~ header #link-aula8.3 a,
+#aula8.4:target ~ header #link-aula8.4 a,
+#aula8.5:target ~ header #link-aula8.5 a,
 #aula9:target ~ header #link-aula9 a{
     background: #333;
     color: #fff;
