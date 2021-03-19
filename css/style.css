@@ -77,6 +77,9 @@ div#popupPerfil ul{
     border-bottom:3px solid #EA0000;
 }
 
+#conteudo{
+    padding-top: 7rem;
+}
 
 #textCenter{
     transform: rotate(deg);
@@ -86,8 +89,6 @@ div#popupPerfil ul{
     border:1px solid black;
     box-shadow:3px 3px 0 black;
 }
-
-
 
 /*login*/
 fieldset#login {
@@ -131,14 +132,6 @@ div.curso:hover {
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     align:center;
-}
-
-#destaque{
-    padding-top: 10rem;
-}
-
-#texto{
-    padding-top: 10rem;
 }
 
 img#destaque {
