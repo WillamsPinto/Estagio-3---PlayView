@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
-        <link rel="stylesheet" type="text/css" href="_css/style.css" media="screen" />
-        <script src="_css/_javascript/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <script  type="text/javascript" src="js/banner.js"></script>
 
         <!--------------------- Bootstrap ---------------------------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -31,7 +31,7 @@
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                            
 
-                            <a href="login.html" aria-expanded="true" id="TLink1" href="#" onclick="togglePerfil('popupPerfil', 'TLink1')"><img src="_img/_icon/user-icon.png" style="width: 40px; height: 40px;" /></a>
+                            <a href="login.html" aria-expanded="true" id="TLink1" href="#" onclick="togglePerfil('popupPerfil', 'TLink1')"><img src="img/icon/user-icon.png" style="width: 40px; height: 40px;" /></a>
                             
                         </form>
                     </div>
@@ -42,70 +42,18 @@
                         <div class="row">    
                             <li class="col-sm"><a href="cursos.html" style="color: white;">Cursos</a></li>
                             <li class="col-sm"><a href="sobre.html" style="color: white;">Sobre</a></li>
-                            <li class="col-sm"><a href="#Validar" style="color: white;">Validar Certificado </a></li>
+                            <li class="col-sm"><a href="#contato" style="color: white;">Contato </a></li>
                         </div>
                     </ul>
-            </div>
+                </div>
             </header>
       
             <div align="center" id="destaque">
 
-                <script language="JavaScript">
-                    var bannerAD=new Array();
-                    var adNum=0;
-            
-            
-                    bannerAD[0]="./_img/destaque/aula.jpg";
-                    bannerAD[1]="./_img/destaque/ead.jpg";
-                    bannerAD[2]="./_img/destaque/ead1.jpg";
-                    bannerAD[3]="./_img/destaque/ead2.jpg";
-            
-            
-                    var preloadedimages=new Array();
-                        for (i=1;i<bannerAD.length;i++){
-                            preloadedimages[i]=new Image();
-                            preloadedimages[i].src=bannerAD[i];
-                        }
-            
-                    function setTransition(){
-                        if (document.all){
-                            bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23);
-                            bannerADrotator.filters.revealTrans.apply();
-                        }
-                    }
-            
-                    function playTransition(){
-                        if (document.all)
-                            bannerADrotator.filters.revealTrans.play()
-                    }
-            
-                    function nextAd(){
-                        if(adNum<bannerAD.length-1)adNum++;
-                        else adNum=0;
-                            setTransition();
-                            document.images.bannerADrotator.src=bannerAD[adNum];
-                            playTransition();
-                            theTimer=setTimeout("nextAd()", 5000);
-                    }
-            
-                    function jump2url(){
-                        jumpUrl=bannerADlink[adNum];
-                        jumpTarget='_self';
-                        if (jumpUrl != ''){
-                        if (jumpTarget != '')window.open(jumpUrl,jumpTarget);
-                        else location.href=jumpUrl;
-                        }
-                    }
-            
-                    function displayStatusMsg() { 
-                        status=bannerADlink[adNum];
-                        document.returnValue = true;
-                    }
-                </script>
             
                 <p></p>
                 <BANNERAD>
-                    <img src="./_img/destaque/aula.jpg"; id='banner' name="bannerADrotator" style="filter:revealTrans(duration=3,transition=20)">
+                    <img src="./img/destaque/aula.jpg"; id='banner' name="bannerADrotator" style="filter:revealTrans(duration=3,transition=20)">
                     <script language="JavaScript">nextAd()</script>
                 </BANNERAD>
            
@@ -121,43 +69,15 @@
                             <div>
                                 <div class="curso" >
                                     <a target="_blank" href="detalhescursos.html">
-                                        <img src= "./_img/_icon/python.png" id ="destaque">
+                                        <img src= "./img/icon/python.png" id ="destaque">
                                     </a>
-                                <b><p>Python</p></b>
+                                    <b><p>Python</p></b>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                        <td>
-                            <div class="imagen">
-                                <div class="curso">
-                                    <a target="_blank" href="./_img/_icon/html.png">
-                                        <img src= "./_img/_icon/html.png" id ="destaque" >
-                                    </a>
-                                <b><p>Html</p></b>
-                            </div>
-                        </div>
-                    </td>
-                        <td>
-                            <div class="imagen">
-                                <div class="curso">
-                                    <a target="_blank" href="./_img/_icon/micro.png">
-                                        <img src= "./_img/_icon/micro.png" id ="destaque" >
-                                    </a>
-                                <b><p>Manuteção de micro</p></b>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
                 </table>
                 <hr class="style1">
-        </div>
-
-        <div id="rodape">
-            <footer id="rodape">
-                <p>Copyright &copy; 2020 - SM<br/>
-                <a href="http://facebook.com" target="_blank"> Facebook </a>|
-                <a href="http://instagram.com" target="_blank"> Instagram</a></p>
-            </footer>
         </div>
     </body>
 </html>
