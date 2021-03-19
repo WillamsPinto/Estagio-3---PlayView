@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-size: 100%;
     background-image: url(./img/wpp.png);
@@ -86,10 +91,6 @@ div#menu ul{
     box-shadow:3px 3px 0#3d844b;
 }
 
-div#interface{
-    background-color: #dddddd;
-}
-
 
 /* Rodape */
 footer#rodape{
@@ -149,7 +150,8 @@ div.curso:hover {
 }
 
 img#destaque {
-    width: 10%;
+    width: 100px;
+    height: 90px;
     align:center;
 }
 
@@ -191,6 +193,3 @@ p#curso{
     margin:2px;
     max-width: 300px;
 }
-
-
-
