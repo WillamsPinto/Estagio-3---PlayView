@@ -34,21 +34,49 @@ div#popupPerfil ul{
     list-style: none;
 }
 
-#animesVistos{
-    padding-right: 25px;
-    color: black;
-    font-family: 'Bangers';
-
-    width:500px;
-    height:200px;
-    background:#fff;
-    border: solid black;
-    border-color: #3d844b;
-
-    border-width: 3px 3px 5px 5px;
-    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
-    transform: rotate(deg);
+#topo{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 100;
 }
+
+#menu{
+    margin-top: 4rem;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    background-color: #3d844b;
+}
+#menu ul {
+    padding: 2px 0 10px 10px;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    list-style:none;
+    text-align: center;
+    font-size: 100%;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    color: #fff;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    text-align: center;
+}
+
+#menu ul li a:hover {
+    background-color:rgba(255, 255, 255, .2);
+    border-bottom:3px solid #EA0000;
+}
+
 
 #textCenter{
     transform: rotate(deg);
@@ -59,51 +87,7 @@ div#popupPerfil ul{
     box-shadow:3px 3px 0 black;
 }
 
-div#menu ul{
-    list-style: none;
-    list-style-type: none;
-    margin: auto;
-    position: absolute;
-    margin: -15px 30% -15px 30%;
-}
 
-#menu2{
-    padding-top: 10px;
-    height: 40px;
-    background-color: #3d844b;
-    font-family: 'Bangers';
-
-    border-bottom: solid 1px white;
-
-}
-
-#menu2 .row{
-    margin: 0px auto 0px 10%;
-}
-
-
-#vistosRecentemente{
-    transform: rotate(2deg);
-    margin:15px;
-    padding:0 5px;
-    background:white;
-    border: 10px solid white;
-    box-shadow:3px 3px 0#3d844b;
-}
-
-
-/* Rodape */
-footer#rodape{
-    background-color: #dddddd;
-    width: 100%;
-    clear: both;
-    border-top: 1px solid #606060;
-}
-
-footer#rodape p{
-    text-align: center;
-    width: 100%;
-}
 
 /*login*/
 fieldset#login {
@@ -147,6 +131,14 @@ div.curso:hover {
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     align:center;
+}
+
+#destaque{
+    padding-top: 10rem;
+}
+
+#texto{
+    padding-top: 10rem;
 }
 
 img#destaque {
