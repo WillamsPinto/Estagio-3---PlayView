@@ -115,6 +115,13 @@ fieldset#login a{
 	padding: 2px;
 }
 
+#img_login {
+    align: center;
+    width: 100%;
+    max-height:300px;
+    height: auto;
+}
+
 /*Banner*/
 
 img#banner{
