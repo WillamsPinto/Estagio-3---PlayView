@@ -27,7 +27,6 @@ div#popupPerfil{
     box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
     display: none;
     box-sizing: border-box;
-
 }
 
 div#popupPerfil ul{
@@ -35,50 +34,17 @@ div#popupPerfil ul{
 }
 
 #topo{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     display: flex;
     z-index: 100;
 }
 
-#menu{
-    margin-top: 4rem;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    z-index: 100;
-    background-color: #3d844b;
-}
-#menu ul {
-    padding: 2px 0 10px 10px;
-    flex-grow: 1;
-    cursor: pointer;
-    transition: all .4s;
-    list-style:none;
-    text-align: center;
-    font-size: 100%;
-}
-
-#menu ul li { display: inline; }
-
-#menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    color: #fff;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
-    text-align: center;
-}
-
-#menu ul li a:hover {
-    background-color:rgba(255, 255, 255, .2);
-    border-bottom:3px solid #EA0000;
-}
 
 #conteudo{
-    padding-top: 7rem;
+    padding-top: 5rem;
+    background: #d3d3d3;
+    padding-bottom: 7%;
 }
 
 #textCenter{
@@ -88,6 +54,48 @@ div#popupPerfil ul{
     background:#ddd;
     border:1px solid black;
     box-shadow:3px 3px 0 black;
+}
+
+/*Menu Central*/
+#interna {
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(255, 255, 255, .2);
+}
+  
+ul.topnav li {float: left;}
+  
+ul.topnav li a {
+    display: block;
+    color: #2bc64a;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 100%;
+}
+  
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+    border-bottom:3px solid #EA0000;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul.topnav li a.active { 
+    background-color: #111;
+    font-weight: 600;
+    color: #fff;}
+
+ul.topnav li.right {float: right;}
+  
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 
 /*login*/
@@ -117,7 +125,7 @@ fieldset#login a{
 
 #img_login {
     align: center;
-    width: 100%;
+    width: 40%;
     max-height:300px;
     height: auto;
 }
