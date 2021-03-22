@@ -29,7 +29,7 @@ $(document).ready(function(){
     })
 
     $(document).ready(function(){
-        $('.box_sumario').before('<span>2º Modulo: Mostrar conteúdo</span>');
+        $('.box_sumario').before('<span>3º Modulo: Mostrar conteúdo</span>');
         $('.box_sumario').css('display', 'none')
         $('span', '#box_geral').click(function() {
         $(this).next().slideToggle('slow')
