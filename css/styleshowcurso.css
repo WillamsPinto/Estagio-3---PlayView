@@ -1,11 +1,30 @@
 @charset "UTF-8";
 
 div.Logocurso {
-    margin-top: 5%;
+    margin-left: 3%;
+    padding-top: 1%;
 }
 div.Logocurso img {
-    height: 25%;
-    max-width: 160px;
+    height: 40%;
+    max-height: 130px;
+}
+
+table.detalhe {
+    border-collapse: collapse;
+  }
+
+
+table.detalhe tr {
+    padding: 4%;
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+}
+
+table.detalhe td {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    border-bottom: 4px solid #ddd;
 }
 
 div.infocurso img#linha {
@@ -13,22 +32,36 @@ div.infocurso img#linha {
     max-width: 160px;
 }
 
-div.apresentacaocurso iframe{
-    margin: auto auto 5% 30%;
-    
+
+iframe{
+   min-width: 80%;
+   width:560;
+   height:315; 
 }
+
 div.descricao p{
     text-align: justify;
     font-size: 12pt;
-    margin: 5% 5% 5% 5% ;
+    margin: 2% 5% 5% 5% ;
 }
 
 div.conteudo {
     border: 1px solid #777;
 }
 
+
+div.conteudo{
+    margin: 5%;
+    background-color: #d3d3d3;
+}
+
 div.conteudo table, h2{
-    margin: 5% 5% auto 15%;
+    margin: 5% 5% 0 15%;
+}
+
+
+div.conteudo ul{
+    margin: 7%;
 }
 
 .botao3d {
