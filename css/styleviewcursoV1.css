@@ -13,12 +13,12 @@ header#sumario{
     border: 8px solid gray;  
     margin-left: 2px;
     width:28%;
-    height: 100%;
+    height: 34rem;
     background: #dddddd;
     position: absolute;
     left:0;
-    top:20%;
-    z-index: 5;
+    top:12%;
+    z-index: 4;
     overflow: auto;
 }
 
@@ -26,13 +26,14 @@ header#sumario h4{
     text-align: center;
 }
 
-
-nav ul{
+nav#nav_sumario ul{
     list-style:none;
     margin:5px 0;
     padding:0;
+    text-align: center;
 }
-nav a{
+
+nav#nav_sumario a{
     display:block;
     border:1px solid #e5e5e5;
     border-left:0;
@@ -46,6 +47,7 @@ nav a{
 ol {
     list-style-type: none;
 }
+
 .box{
     position: absolute;
     top:5%;
@@ -79,6 +81,7 @@ ol {
 #home{
     margin-left:0;
 }
+
 #apostila:target ~ header #link-apostila a,
 #unidade:target ~ header #link-unidade a,
 #aula1:target ~ header #link-aula1 a,
@@ -109,7 +112,6 @@ ol {
 #aula9.1:target ~ header #link-aula9.1 a,
 #aula9.2:target ~ header #link-aula9.2 a{
     background: #333;
-    color: #fff;
 }
 
 div.videoaula iframe{
@@ -117,14 +119,6 @@ div.videoaula iframe{
 }
 
 /*Parte antiga*/
-div#rodape{
-    display: block;
-    background-color: #dddddd;
-    position: absolute;
-    width: 100%;
-    margin: 50% auto 0px auto;
-}
-
 hgroup#infoUnidade{
     background-color: #dddddd;
     margin:50px auto 50px auto;
@@ -149,71 +143,6 @@ section#corpo h1,h4,h5,h6{
     background-color: #dddddd;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
 }
-/*Figures*/
-figure.exemplos-fracao-legenda img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figure.exemplos-fracao-legenda{
-    position: relative;
-    border: 8px solid white;  
-}
-
-figure.exemplos-fracao-legenda figcaption{
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
-}
-
-figure.exemplos-fracao-legenda:hover figcaption{
-    opacity: 1;
-}
-
-/*-------------------2-----------------*/
-figure.gif-pizza-legenda{
-    position: relative;
-    border: 8px solid white;  
-}
-
-figure.gif-pizza-legenda img{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-figure.gif-pizza-legenda figcaption{
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
-}
-
-figure.gif-pizza-legenda:hover figcaption{
-    opacity: 1;
-}
-
-
-figure. img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 label{
     padding: 10px;

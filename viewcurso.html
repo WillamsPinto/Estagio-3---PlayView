@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+        <title>Introdução a Programação com Python</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/styleviewcursoV1.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/teste.css" media="screen" />
+        <script  type="text/javascript" src="js/teste.js"></script>
 
-        
         <!--------------------- Bootstrap ---------------------------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
         <!------------------------------ JQuery -------------------------------->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>-->
+
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-
-        <title>Introdução a Programação com Python</title>
+    
+        
     </head>
     <body>
-        <header >
+
+        <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="topo">
                 <a class="navbar-brand" href="index.html" style="font-family: bangers; font-size: 180%; padding-bottom:0px ;">
                     PlayView
@@ -47,56 +50,86 @@
             </nav>
         </header>
 
-            <header id="sumario">
-                <h4><a href="detalhescursos.html">Introdução a Programação com Python</h4></a>
-                <nav>
-                    <ul>
-                        <li id="link-apostila"><a href="#apostila">Apostila</a></li>
-                        <li id="link-unidade"><a href="#unidade">1º Modulo: Intrudução ao curso</a></li>
-                        <ol>
-                            <li id="link-aula1"><a href="#aula1">Aula 1: Noções de Lógica de programação e algoritmos</a></li>
-                            <li id="link-atividade1"><a href="#atividade1">Atividade 1: Noções de Lógica de programação e algoritmos</a></li>
+        <header id="sumario">
+            <h4><a href="detalhescursos.html">Introdução a Programação com Python</h4></a>
 
-                            <li id="link-aula1.2"><a href="#aula1.2">Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</a></li>
-                            <li id="link-aula1.3"><a href="#aula1.3">Aula: 1.3: Coneitos básicos de lógica de programação e linguagens de programação</a></li>
-                            <li id="link-aula2"><a href="#aula2">Aula 2: Preparação da maquina para inicar os estudos</a></li>
-                            <li id="link-dica01"><a href="#dica01">Dica 01: Ambiente de programação alternativo</a></li>
-                        </ol>
-                        <li id="link-unidade2"><a href="#unidade2">2º Modulo: Introdução a programação</a></li>
-                        <ol>
-                            <li id="link-aula3">Aula 3:Variáveis</li>
+                <nav id="nav_sumario">
+                    <div id="box_geral">
+                        <ul>
+                            <li id="link-apostila"><a href="#apostila">Apostila</a></li>
+                            <li id="link-unidade"><a href="#unidade">1º Modulo: Intrudução ao curso</a></li>
+                        </ul>
+
+                        <div class="box_1modulo">
+                            <ol>
+                                <li id="link-aula1"><a href="#aula1">Aula 1: Noções de Lógica de programação e algoritmos</a></li>
+                                <li id="link-atividade1"><a href="#atividade1">Atividade 1: Noções de Lógica de programação e algoritmos</a></li>
+                                <li id="link-aula1.2"><a href="#aula1.2">Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</a></li>
+                                <li id="link-aula1.3"><a href="#aula1.3">Aula: 1.3: Coneitos básicos de lógica de programação e linguagens de programação</a></li>
+                                <li id="link-aula2"><a href="#aula2">Aula 2: Preparação da maquina para inicar os estudos</a></li>
+                                <li id="link-dica01"><a href="#dica01">Dica 01: Ambiente de programação alternativo</a></li>
+                            </ol>
+                        </div>
+
+                        <ul>
+                            <li id="link-unidade2"><a href="#unidade2">2º Modulo: Introdução a programação</a></li>
+                        </ul>
+                        
+                        <div class="box_2modulo">
+        
+                            <ul>
+                                <li id="link-aula3">Aula 3:Variáveis</li>
+                            </ul>
+
                             <ol>
                                 <li id="link-aula3"><a href="#aula3">Aula 3:Variáveis Parte 1</a></li>
                                 <li id="link-aula3.2"><a href="#aula3.2">Aula 3:Variáveis Parte 2</a></li>
                                 <li id="link-aula3.3"><a href="#aula3.3">Aula 3:Variáveis Parte 3</a></li>
                             </ol>
-                            <li id="link-aula4">Aula 4: Estruturas Sequencial e teste de mesa</li>
+
+                            <ul>
+                                <li id="link-aula4">Aula 4: Estruturas Sequencial e teste de mesa</li>
+                            </ul>
+
                             <ol>
                                 <li id="link-aula4.1"><a href="#aula4.1">Aula 4: Estruturas Sequencial e teste de mesa Parte 1</a></li>
                                 <li id="link-aula4.2"><a href="#aula4.2">Aula 4: Estruturas Sequencial e teste de mesa Parte 2</a></li>
                             </ol>
-                            <li id="link-aula5">Aula 5: Entrada e Saída</li>
+
+                            <ul>
+                                <li id="link-aula5">Aula 5: Entrada e Saída</li>
+                            </ul>
+
                             <ol>
                                 <li id="link-aula5.1"><a href="#aula5.1">Aula 5.1: Entrada de dados - parte 1</a></li>
                                 <li id="link-aula5.1.2"><a href="#aula5.1.2">Aula 5.1: Entrada de dados - parte 2</a></li>
 
                                 <li id="link-aula5.2"><a href="#aula5.2">Aula 5.2: Saída de dados</a></li>
                             </ol>
-                            <li id="link-aula6">Aula 6: Estruturas condicionais</li>
+
+                            <ul>
+                                <li id="link-aula6">Aula 6: Estruturas condicionais</li>
+                            </ul>
+
                             <ol>
                                 <li id="link-aula6.1"><a href="#aula6.1">Aula 6: Estruturas condicionais Parte 1</a></li>
                                 <li id="link-aula6.2"><a href="#aula6.2">Aula 6: Estruturas condicionais Parte 2</a></li>
                             </ol>
-                            <li id="link-aula7">Aula 7: Estruturas de repetição</li>
+                            
+                            <ul>
+                                <li id="link-aula7">Aula 7: Estruturas de repetição</li>
+                            </ul>
+                            
                             <ol>
                                 <li id="link-aula7.1"><a href="#aula7.1">Aula 7.1: While</a></li>
-                                <li> Aula 7.2: For</li>
-                                    <ol>
-                                        <li id="link-aula7.2.1"><a href="#aula7.2.1">Aula 7.2.1: For Parte 1</a></li>
-                                        <li id="link-aula7.2.2"><a href="#aula7.2.2">Aula 7.2.2: For Parte 2</a></li>
-                                    </ol>
+                                <li id="link-aula7.2.1"><a href="#aula7.2.1">Aula 7.2.1: For Parte 1</a></li>
+                                <li id="link-aula7.2.2"><a href="#aula7.2.2">Aula 7.2.2: For Parte 2</a></li>       
                             </ol>
-                            <li id="link-aula8">Aula 8: Listas</li>
+
+                            <ul>
+                                <li id="link-aula8">Aula 8: Listas</li>
+                            </ul>
+                            
                             <ol>
                                 <li id="link-aula8.1"><a href="#aula8.1">Aula 8.1: Listas Parte 1</a></li>
                                 <li id="link-aula8.2"><a href="#aula8.2">Aula 8.2: Listas Parte 2</a></li>
@@ -105,347 +138,353 @@
                                 <li id="link-aula8.5"><a href="#aula8.5">Aula 8.5: Listas Parte 5</a></li>
                             </ol>
 
-                            <li id="link-aula9">Aula 9: Sublistas</li>
+                            <ul>
+                                <li id="link-aula9">Aula 9: Sublistas</li>
+                            </ul>
+                            
                                 <ol>
                                     <li id="link-aula9.1"><a href="#aula9.1">Aula 9.1: Sublistas Parte 1</a></li>
                                     <li id="link-aula9.2"><a href="#aula9.2">Aula 9.2: Sublistas Parte 2</a></li>
                                 </ol>
 
-                        </ol>
-
-                    </ul>
+                        </div>
+                        <div class="box_sumario">
+                            <h2>Título 3</h2>
+                            <p>Este é um exemplo de texto que será mostrado ao clicar no Título 3, aqui você pode usar qualquer tag html, como inserir imagens, links, textos, etc.</p>
+                        </div>
+                    </div>
                 </nav>
-            </header>
+        </header>
 
-            <section id="corpo">
+        <section id="corpo">
 
-                <section id="apostila" class="content">
-                    <article class="box">
-                        <h1>Apostila</h1>
-                        <div class="apostila">
-                            <embed id="pdf" src="apostila/Introdução a Programação com Python.pdf"/>
-                        </div>
-                    </article>
-                </section>
-
-
-                <section id="unidade" class="content">
-                    <article class="box">
-                        <hgroup id="infoUnidade">
-                            <h1>1º Módulo</h1>
-                            <ul>
-                            <h2>1 - Noções de Lógica de programação e algoritmos.</h2>
-                            <h2>2 - Fases Básicas da construção de algoritmos e suas representações.</h2>
-                            <h2>3 - Coneitos básicos de lógica de programação e linguagens de programação</h2>
-                            <h2>4 - Preparação da maquina para inicar os estudos</h2>
-                            <h2>5 - Dica 01: Ambiente de programação alternativo</h2>
-                            </ul>
-                        </hgroup>
-                    </article>
-                </section>
-
-                <section id="aula1" class="content">
-                    <article class="box">
-                        <h1>Aula 1: Noções de Lógica de programação e algoritmos</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6R2goK3-WY8" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula1.2" class="content">
-                    <article class="box">
-                        <h1>Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k6XfTFIxNqI" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula1.3" class="content">
-                    <article class="box">
-                        <h1>Aula 1.3: Coneitos básicos de lógica de programação e linguagens de programação</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wt_AodndnJs" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-
-                <section id="aula2" class="content">
-                    <article class="box">
-                        <h1>Aula 2: Preparação da maquina para inicar os estudos</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cPbJ0KX7JpY" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="dica01" class="content">
-                    <article class="box">
-                        <h1>Dica 01</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/L9gmVX4lMW4" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="unidade2" class="content">
-                    <article class="box">
-                        <hgroup id="infoUnidade">
-                            <h1>2º Módulo</h1>
-                            <ul>
-                                <h2>1 - Variáveis.</h2>
-                                <h2>2 - Estrutura Sequencial e teste de mesa.</h2>
-                                <h2>3 - Entrada e Sáida</h2>
-                                <h2>4 - Estrutura Condicional</h2>
-                                <h2>5 - Comando de repetição While</h2>
-                                <h2>6 - Comando de repetição For</h2>
-                                <h2>7 - Lista</h2>
-                                <h2>8 - Sublistas</h2>
-                            </ul>
-                        </hgroup>
-                    </article>
-                </section>
-
-                <section id="aula3" class="content">
-                    <article class="box">
-                        <h1>Aula 3: Variáveis Parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5ku_z8MxfUw" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula3.2" class="content">
-                    <article class="box">
-                        <h1>Aula 3: Variáveis Parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yXSuWmsWszI" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula3.3" class="content">
-                    <article class="box">
-                        <h1>Aula 3: Variáveis Parte 3</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ltk4gPMacc" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-
-                
-                <section id="aula4.1" class="content">
-                    <article class="box">
-                        <h1>Aula 4: Estrutura Sequencial e Teste de Mesa parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8JfiZVfCHpM" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula4.2" class="content">
-                    <article class="box">
-                        <h1>Aula 4: Estrutura Sequencial e Teste de Mesa - parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GPKGmvIN_F4" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-
-                <section id="aula5.1" class="content">
-                    <article class="box">
-                        <h1>Aula 5.1: Entrada de dados - Parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Iit3DfT5Ay4" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula5.1.2" class="content">
-                    <article class="box">
-                        <h1>Aula 5.1: Entrada de dados - Parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ml89YqaRjRc" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-
-                <section id="aula5.2" class="content">
-                    <article class="box">
-                        <h1>Aula 5.2: Saída de Dados</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VulF60qI2_Q" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula6.1" class="content">
-                    <article class="box">
-                        <h1>Aula 6.1: Estrutura Condicional Parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/snGfk9K-V7o" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-
-                <section id="aula6.2" class="content">
-                    <article class="box">
-                        <h1>Aula 6.2: Estrutura Condicional Parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DggnI-JF98A" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
-                    </article>
-                </section>
-
-
-
-
-                <section id="aula7.1" class="content">
-                    <article class="box">
-                        <h1>Aula 7.1: Comando de repetição While</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHCwqGoeMUY" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula7.2.1" class="content">
-                    <article class="box">
-                        <h1>Aula 7.2.1: Comando de repetição For (Parte 1)</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rljWtq7fjOc" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula7.2.2" class="content">
-                    <article class="box">
-                        <h1>Aula 7.2.2: Comando de repetição For (Parte 2)</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bYkHmzgIePA" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>                        
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula8.1" class="content">
-                    <article class="box">
-                        <h1>Aula 8.1: Listas Parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EJQTbg6oWhg" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula8.2" class="content">
-                    <article class="box">
-                        <h1>Aula 8.2: Listas Parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w7PaRlw0iig" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula8.3" class="content">
-                    <article class="box">
-                        <h1>Aula 8.3: Listas Parte 3</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RGcinudZcTo" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula8.4" class="content">
-                    <article class="box">
-                        <h1>Aula 8.4: Listas parte 4</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OuCQXftLdYk" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula8.5" class="content">
-                    <article class="box">
-                        <h1>Aula 8.5: Listas parte 5</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7zH5I9Aq_TU" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula9.1" class="content">
-                    <article class="box">
-                        <h1>Aula 9.1: SubListas Parte 1</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kPAqHxWSPfY" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
-                <section id="aula9.2" class="content">
-                    <article class="box">
-                        <h1>Aula 9.2: SubListas Parte 2</h1>
-                        <div class="videoaula">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JqKJ_FlWDl8" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                            gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </article>
-                </section>
-
+            <section id="apostila" class="content">
+                <article class="box">
+                    <h1>Apostila</h1>
+                    <div class="apostila">
+                        <embed id="pdf" src="apostila/Introdução a Programação com Python.pdf"/>
+                    </div>
+                </article>
             </section>
 
-    </body>
+
+            <section id="unidade" class="content">
+                <article class="box">
+                    <hgroup id="infoUnidade">
+                        <h1>1º Módulo</h1>
+                        <ul>
+                        <h2>1 - Noções de Lógica de programação e algoritmos.</h2>
+                        <h2>2 - Fases Básicas da construção de algoritmos e suas representações.</h2>
+                        <h2>3 - Coneitos básicos de lógica de programação e linguagens de programação</h2>
+                        <h2>4 - Preparação da maquina para inicar os estudos</h2>
+                        <h2>5 - Dica 01: Ambiente de programação alternativo</h2>
+                        </ul>
+                    </hgroup>
+                </article>
+            </section>
+
+            <section id="aula1" class="content">
+                <article class="box">
+                    <h1>Aula 1: Noções de Lógica de programação e algoritmos</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6R2goK3-WY8" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula1.2" class="content">
+                <article class="box">
+                    <h1>Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/k6XfTFIxNqI" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula1.3" class="content">
+                <article class="box">
+                    <h1>Aula 1.3: Coneitos básicos de lógica de programação e linguagens de programação</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wt_AodndnJs" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="aula2" class="content">
+                <article class="box">
+                    <h1>Aula 2: Preparação da maquina para inicar os estudos</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cPbJ0KX7JpY" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="dica01" class="content">
+                <article class="box">
+                    <h1>Dica 01</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L9gmVX4lMW4" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="unidade2" class="content">
+                <article class="box">
+                    <hgroup id="infoUnidade">
+                        <h1>2º Módulo</h1>
+                        <ul>
+                            <h2>1 - Variáveis.</h2>
+                            <h2>2 - Estrutura Sequencial e teste de mesa.</h2>
+                            <h2>3 - Entrada e Sáida</h2>
+                            <h2>4 - Estrutura Condicional</h2>
+                            <h2>5 - Comando de repetição While</h2>
+                            <h2>6 - Comando de repetição For</h2>
+                            <h2>7 - Lista</h2>
+                            <h2>8 - Sublistas</h2>
+                        </ul>
+                    </hgroup>
+                </article>
+            </section>
+
+            <section id="aula3" class="content">
+                <article class="box">
+                    <h1>Aula 3: Variáveis Parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5ku_z8MxfUw" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula3.2" class="content">
+                <article class="box">
+                    <h1>Aula 3: Variáveis Parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yXSuWmsWszI" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula3.3" class="content">
+                <article class="box">
+                    <h1>Aula 3: Variáveis Parte 3</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ltk4gPMacc" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+
+            
+            <section id="aula4.1" class="content">
+                <article class="box">
+                    <h1>Aula 4: Estrutura Sequencial e Teste de Mesa parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8JfiZVfCHpM" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula4.2" class="content">
+                <article class="box">
+                    <h1>Aula 4: Estrutura Sequencial e Teste de Mesa - parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GPKGmvIN_F4" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="aula5.1" class="content">
+                <article class="box">
+                    <h1>Aula 5.1: Entrada de dados - Parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Iit3DfT5Ay4" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula5.1.2" class="content">
+                <article class="box">
+                    <h1>Aula 5.1: Entrada de dados - Parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ml89YqaRjRc" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="aula5.2" class="content">
+                <article class="box">
+                    <h1>Aula 5.2: Saída de Dados</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VulF60qI2_Q" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula6.1" class="content">
+                <article class="box">
+                    <h1>Aula 6.1: Estrutura Condicional Parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/snGfk9K-V7o" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="aula6.2" class="content">
+                <article class="box">
+                    <h1>Aula 6.2: Estrutura Condicional Parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DggnI-JF98A" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                </article>
+            </section>
+
+
+
+
+            <section id="aula7.1" class="content">
+                <article class="box">
+                    <h1>Aula 7.1: Comando de repetição While</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHCwqGoeMUY" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula7.2.1" class="content">
+                <article class="box">
+                    <h1>Aula 7.2.1: Comando de repetição For (Parte 1)</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rljWtq7fjOc" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula7.2.2" class="content">
+                <article class="box">
+                    <h1>Aula 7.2.2: Comando de repetição For (Parte 2)</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bYkHmzgIePA" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula8.1" class="content">
+                <article class="box">
+                    <h1>Aula 8.1: Listas Parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EJQTbg6oWhg" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula8.2" class="content">
+                <article class="box">
+                    <h1>Aula 8.2: Listas Parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w7PaRlw0iig" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula8.3" class="content">
+                <article class="box">
+                    <h1>Aula 8.3: Listas Parte 3</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RGcinudZcTo" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula8.4" class="content">
+                <article class="box">
+                    <h1>Aula 8.4: Listas parte 4</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OuCQXftLdYk" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula8.5" class="content">
+                <article class="box">
+                    <h1>Aula 8.5: Listas parte 5</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7zH5I9Aq_TU" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula9.1" class="content">
+                <article class="box">
+                    <h1>Aula 9.1: SubListas Parte 1</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kPAqHxWSPfY" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aula9.2" class="content">
+                <article class="box">
+                    <h1>Aula 9.2: SubListas Parte 2</h1>
+                    <div class="videoaula">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JqKJ_FlWDl8" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+
+</body>
 </html>
