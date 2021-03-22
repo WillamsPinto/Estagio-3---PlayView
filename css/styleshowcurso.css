@@ -27,11 +27,25 @@ table.detalhe td {
     border-bottom: 4px solid #ddd;
 }
 
+.sucesso{
+    border: 1px solid  #2e8b57;
+    color: white;
+    border-radius: 9px;
+    background-color: #2e8b57;
+}
+
+.sucesso div {
+    background-color:  #fff;
+    border: 1px solid  #2e8b57;
+    color: #2e8b57;
+    border-radius: 9px;
+    width: 100%;
+}
+
 div.infocurso img#linha {
     height: 15%;
     max-width: 160px;
 }
-
 
 iframe{
    min-width: 80%;
