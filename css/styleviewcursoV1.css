@@ -1,54 +1,13 @@
 @charset "UTF-8";
 
+.principal {
+    background:#fff; 
+}
 
 embed{
     height: 400px;
     width: 900px;
     margin-left: 2%;
-}
-
-header#sumario{
-    display: block;
-    position: fixed;
-    border: 8px solid gray;  
-    margin-left: 2px;
-    width:28%;
-    height: 34rem;
-    background: #dddddd;
-    position: absolute;
-    left:0;
-    top:12%;
-    z-index: 4;
-    overflow: auto;
-}
-
-header#sumario h4{
-    text-align: center;
-}
-
-nav#nav_sumario ul{
-    list-style:none;
-    margin:5px 0;
-    padding:0;
-    text-align: center;
-}
-
-nav#nav_sumario a{
-    display:block;
-    border:1px solid #e5e5e5;
-    border-left:0;
-    border-right:0;
-    margin:3px 0;
-    color:#333;
-    padding:5px 0;
-    text-decoration: none;
-}
-
-
-ol {
-    list-style-type: none;
-    list-style: none;
-    text-align: justify;
 }
 
 .box{
@@ -57,8 +16,9 @@ ol {
     right:10px;
     width:70%;
     height:70%;
-    background: #ffffff;;
+    background: #ffffff;
 }
+
 .box h2{
     font-size:20px;
     padding:10px;
@@ -85,38 +45,6 @@ ol {
     margin-left:0;
 }
 
-#apostila:target ~ header #link-apostila a,
-#unidade:target ~ header #link-unidade a,
-#aula1:target ~ header #link-aula1 a,
-#atividade1:target ~ header #link-atividade1 a,
-#aula1.2:target ~ header #link-aula1.2 a,
-#aula1.3:target ~ header #link-aula1.3 a,
-#aula2:target ~ header #link-aula2 a,
-#dica01:target ~ header #link-dica01 a,
-#unidade2:target ~ header #link-unidade2 a,
-#aula3:target ~ header #link-aula3 a,
-#aula3.2:target ~ header #link-aula3.2 a,
-#aula3.3:target ~ header #link-aula3.3 a,
-#aula4.1:target ~ header #link-aula4.1 a,
-#aula4.2:target ~ header #link-aula4.2 a,
-#aula5.1:target ~ header #link-aula5.1 a,
-#aula5.1.2:target ~ header #link-aula5.1.2 a,
-#aula5.2:target ~ header #link-aula5.2 a,
-#aula6.1:target ~ header #link-aula6.1 a,
-#aula6.2:target ~ header #link-aula6.2 a,
-#aula7.1:target ~ header #link-aula7.1 a,
-#aula7.2.1:target ~ header #link-aula7.2.1 a,
-#aula7.2.2:target ~ header #link-aula7.2.2 a,
-#aula8.1:target ~ header #link-aula8.1 a,
-#aula8.2:target ~ header #link-aula8.2 a,
-#aula8.3:target ~ header #link-aula8.3 a,
-#aula8.4:target ~ header #link-aula8.4 a,
-#aula8.5:target ~ header #link-aula8.5 a,
-#aula9.1:target ~ header #link-aula9.1 a,
-#aula9.2:target ~ header #link-aula9.2 a{
-    background: #333;
-}
-
 div.videoaula iframe{
     margin-left: 20%;
 }
@@ -128,6 +56,7 @@ hgroup#infoUnidade{
 }
 
 section#corpo p{
+    height: 100%;
     text-align: justify;
     font-size: 12pt;
     padding: 10px 10px 10px 10px;

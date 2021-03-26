@@ -10,28 +10,29 @@
         <link rel="stylesheet" type="text/css" href="css/boxSumario.css" media="screen" />
         <script  type="text/javascript" src="js/boxSumario.js"></script>
         <script  type="text/javascript" src="js/script.js"></script>
+        <script  type="text/javascript" src="js/menulateral.js"></script>
 
 
         <!--------------------- Bootstrap ---------------------------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <!------------------------------ JQuery -------------------------------->
-        <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>-->
-
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-    
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
         
+            
     </head>
-    <body>
-
+    <body class = 'principal'>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="topo">
                 <a class="navbar-brand" href="index.html" style="font-family: bangers; font-size: 180%; padding-bottom:0px ;">
@@ -52,118 +53,206 @@
             </nav>
         </header>
 
-        <header id="sumario">
-            <h4><a href="detalhescursos.html">Introdução a Programação com Python</h4></a>
-            
-                <nav id="nav_sumario">
-                    <div id="item_menu">
-                    <div id="box_geral">
-                        <ol>
-                            
-                            <li id="link-apostila"><a href="#apostila" onclick="mostrarAtivo(this);">Apostila</a></li>
-                            <li id="link-unidade"><a href="#unidade" onclick="mostrarAtivo(this);">1º Modulo: Sumário</a></li>
-                        </ol>
+        <header >
+            <nav>
+                <div class="nav-wrapper" >
+                    <div id= 'sumario'>
+                        <a id = 'icon_menu' data-activates="menu-mobile" class="button-collapse" style="color: #cf9f51; cursor:pointer;z-index: 100;position: fixed;">
+                            <i class="material-icons"> menu<img src="./img/menu.png" width="40%" style=" z-index: 100;"></i>
+                        </a>
 
-                        <div class="box_1modulo">
-                            <ol>
-                                <li id="link-aula1"><a href="#aula1" onclick="mostrarAtivo(this);">Aula 1: Noções de Lógica de programação e algoritmos</a></li>
-                                <li id="link-atividade1"><a href="#atividade1" onclick="mostrarAtivo(this);">Atividade 1: Noções de Lógica de programação e algoritmos</a></li>
-                                <li id="link-aula1.2"><a href="#aula1.2" onclick="mostrarAtivo(this);">Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</a></li>
-                                <li id="link-aula1.3"><a href="#aula1.3" onclick="mostrarAtivo(this);">Aula: 1.3: Coneitos básicos de lógica de programação e linguagens de programação</a></li>
-                                <li id="link-aula2"><a href="#aula2" onclick="mostrarAtivo(this);">Aula 2: Preparação da maquina para inicar os estudos</a></li>
-                                <li id="link-dica01"><a href="#dica01" onclick="mostrarAtivo(this);">Dica 01: Ambiente de programação alternativo</a></li>
-                            </ol>
-                        </div>
-
-                        <ol>
-                            <li id="link-unidade2"><a href="#unidade2" onclick="mostrarAtivo(this);">2º Modulo: Introdução a programação</a></li>
-                        </ol>
-
-                        <div class="box_2modulo">
-        
-                            <ul>
-                                <li id="link-aula3">Aula 3:Variáveis</li>
-                            </ul>
-
-                            <ol>
-                                <li id="link-aula3"><a href="#aula3" onclick="mostrarAtivo(this);">Aula 3:Variáveis Parte 1</a></li>
-                                <li id="link-aula3.2"><a href="#aula3.2" onclick="mostrarAtivo(this);">Aula 3:Variáveis Parte 2</a></li>
-                                <li id="link-aula3.3"><a href="#aula3.3" onclick="mostrarAtivo(this);">Aula 3:Variáveis Parte 3</a></li>
-                            </ol>
-
-                            <ul>
-                                <li id="link-aula4">Aula 4: Estruturas Sequencial e teste de mesa</li>
-                            </ul>
-
-                            <ol>
-                                <li id="link-aula4.1"><a href="#aula4.1" onclick="mostrarAtivo(this);">Aula 4: Estruturas Sequencial e teste de mesa Parte 1</a></li>
-                                <li id="link-aula4.2"><a href="#aula4.2" onclick="mostrarAtivo(this);">Aula 4: Estruturas Sequencial e teste de mesa Parte 2</a></li>
-                            </ol>
-
-                            <ul>
-                                <li id="link-aula5">Aula 5: Entrada e Saída</li>
-                            </ul>
-
-                            <ol>
-                                <li id="link-aula5.1"><a href="#aula5.1" onclick="mostrarAtivo(this);">Aula 5.1: Entrada de dados - parte 1</a></li>
-                                <li id="link-aula5.1.2"><a href="#aula5.1.2" onclick="mostrarAtivo(this);">Aula 5.1: Entrada de dados - parte 2</a></li>
-
-                                <li id="link-aula5.2"><a href="#aula5.2" onclick="mostrarAtivo(this);">Aula 5.2: Saída de dados</a></li>
-                            </ol>
-
-                            <ul>
-                                <li id="link-aula6">Aula 6: Estruturas condicionais</li>
-                            </ul>
-
-                            <ol>
-                                <li id="link-aula6.1"><a href="#aula6.1" onclick="mostrarAtivo(this);">Aula 6: Estruturas condicionais Parte 1</a></li>
-                                <li id="link-aula6.2"><a href="#aula6.2" onclick="mostrarAtivo(this);">Aula 6: Estruturas condicionais Parte 2</a></li>
-                            </ol>
-                            
-                            <ul>
-                                <li id="link-aula7">Aula 7: Estruturas de repetição</li>
-                            </ul>
-                            
-                            <ol>
-                                <li id="link-aula7.1"><a href="#aula7.1" onclick="mostrarAtivo(this);">Aula 7.1: While</a></li>
-                                <li id="link-aula7.2.1"><a href="#aula7.2.1" onclick="mostrarAtivo(this);">Aula 7.2.1: For Parte 1</a></li>
-                                <li id="link-aula7.2.2"><a href="#aula7.2.2" onclick="mostrarAtivo(this);">Aula 7.2.2: For Parte 2</a></li>       
-                            </ol>
-
-                            <ul>
-                                <li id="link-aula8">Aula 8: Listas</li>
-                            </ul>
-                            
-                            <ol>
-                                <li id="link-aula8.1"><a href="#aula8.1" onclick="mostrarAtivo(this);">Aula 8.1: Listas Parte 1</a></li>
-                                <li id="link-aula8.2"><a href="#aula8.2" onclick="mostrarAtivo(this);">Aula 8.2: Listas Parte 2</a></li>
-                                <li id="link-aula8.3"><a href="#aula8.3" onclick="mostrarAtivo(this);">Aula 8.3: Listas Parte 3</a></li>
-                                <li id="link-aula8.4"><a href="#aula8.4" onclick="mostrarAtivo(this);">Aula 8.4: Listas Parte 4</a></li>
-                                <li id="link-aula8.5"><a href="#aula8.5" onclick="mostrarAtivo(this);">Aula 8.5: Listas Parte 5</a></li>
-                            </ol>
-
-                            <ul>
-                                <li id="link-aula9">Aula 9: Sublistas</li>
-                            </ul>
-                            
-                                <ol>
-                                    <li id="link-aula9.1"><a href="#aula9.1" onclick="mostrarAtivo(this);">Aula 9.1: Sublistas Parte 1</a></li>
-                                    <li id="link-aula9.2"><a href="#aula9.2" onclick="mostrarAtivo(this);">Aula 9.2: Sublistas Parte 2</a></li>
+                        <ul class="hide-on-med-and-down" >
+                            <div class="geral">
+                               <a align = 'center' id = 'h4' href="detalhescursos.html"><b>
+                                    Introdução a Programação com Python
+                                </b></a>
+                                <hr>
+                                
+                                <div id="item_menu">
+                                    <div id="box_geral">
+                                        <ol>
+                                            <li id="link-apostila"><a href="#apostila" onclick="mostrarAtivo(this);">Apostila</a></li>
+                                            <li id="link-unidade"><a href="#unidade" onclick="mostrarAtivo(this);">1º Modulo: Sumário</a></li>
+                                        </ol>
+                
+                                        <div class="box_1modulo">
+                                            <ol>
+                                                <li id="link-aula1"><a href="#aula1" onclick="mostrarAtivo(this);">Aula 1: Noções de Lógica de programação e algoritmos</a></li>
+                                                <li id="link-atividade1"><a href="#atividade1" onclick="mostrarAtivo(this);">Atividade 1: Noções de Lógica de programação e algoritmos</a></li>
+                                                <li id="link-aula1.2"><a href="#aula1.2" onclick="mostrarAtivo(this);">Aula 1.2: Fases Básicas da construção de algoritmos e suas representações</a></li>
+                                                <li id="link-aula1.3"><a href="#aula1.3" onclick="mostrarAtivo(this);">Aula: 1.3: Coneitos básicos de lógica de programação e linguagens de programação</a></li>
+                                                <li id="link-aula2"><a href="#aula2" onclick="mostrarAtivo(this);">Aula 2: Preparação da maquina para inicar os estudos</a></li>
+                                                <li id="link-dica01"><a href="#dica01" onclick="mostrarAtivo(this);">Dica 01: Ambiente de programação alternativo</a></li>
+                                            </ol>
+                                        </div>
+                
+                                        <ol>
+                                            <li id="link-unidade2"><a href="#unidade2" onclick="mostrarAtivo(this);">2º Modulo: Introdução a programação</a></li>
+                                        </ol>
+                
+                                        <div class="box_2modulo">
+                        
+                                            <ul>
+                                                <li id="link-aula3" class="titulo">Aula 3:Variáveis</li>
+                                            </ul>
+                
+                                            <ol>
+                                                <li id="link-aula3"><a href="#aula3" onclick="mostrarAtivo(this);">Aula 3.1:Variáveis Parte 1</a></li>
+                                                <li id="link-aula3.2"><a href="#aula3.2" onclick="mostrarAtivo(this);">Aula 3.2:Variáveis Parte 2</a></li>
+                                                <li id="link-aula3.3"><a href="#aula3.3" onclick="mostrarAtivo(this);">Aula 3.3:Variáveis Parte 3</a></li>
+                                            </ol>
+                
+                                            <ul>
+                                                <li id="link-aula4">Aula 4: Estruturas Sequencial e teste de mesa</li>
+                                            </ul>
+                
+                                            <ol>
+                                                <li id="link-aula4.1"><a href="#aula4.1" onclick="mostrarAtivo(this);">Aula 4.1: Estruturas Sequencial e teste de mesa Parte 1</a></li>
+                                                <li id="link-aula4.2"><a href="#aula4.2" onclick="mostrarAtivo(this);">Aula 4.2: Estruturas Sequencial e teste de mesa Parte 2</a></li>
+                                            </ol>
+                
+                                            <ul>
+                                                <li id="link-aula5">Aula 5: Entrada e Saída</li>
+                                            </ul>
+                
+                                            <ol>
+                                                <li id="link-aula5.1"><a href="#aula5.1" onclick="mostrarAtivo(this);">Aula 5.1: Entrada de dados - parte 1</a></li>
+                                                <li id="link-aula5.1.2"><a href="#aula5.1.2" onclick="mostrarAtivo(this);">Aula 5.1.2: Entrada de dados - parte 2</a></li>
+                
+                                                <li id="link-aula5.2"><a href="#aula5.2" onclick="mostrarAtivo(this);">Aula 5.2: Saída de dados</a></li>
+                                            </ol>
+                
+                                            <ul>
+                                                <li id="link-aula6">Aula 6: Estruturas condicionais</li>
+                                            </ul>
+                
+                                            <ol>
+                                                <li id="link-aula6.1"><a href="#aula6.1" onclick="mostrarAtivo(this);">Aula 6.1: Estruturas condicionais Parte 1</a></li>
+                                                <li id="link-aula6.2"><a href="#aula6.2" onclick="mostrarAtivo(this);">Aula 6.2: Estruturas condicionais Parte 2</a></li>
+                                            </ol>
+                                            
+                                            <ul>
+                                                <li id="link-aula7">Aula 7: Estruturas de repetição</li>
+                                            </ul>
+                                            
+                                            <ol>
+                                                <li id="link-aula7.1"><a href="#aula7.1" onclick="mostrarAtivo(this);">Aula 7.1: While</a></li>
+                                                <li id="link-aula7.2.1"><a href="#aula7.2.1" onclick="mostrarAtivo(this);">Aula 7.2.1: For Parte 1</a></li>
+                                                <li id="link-aula7.2.2"><a href="#aula7.2.2" onclick="mostrarAtivo(this);">Aula 7.2.2: For Parte 2</a></li>       
+                                            </ol>
+                
+                                            <ul>
+                                                <li id="link-aula8">Aula 8: Listas</li>
+                                            </ul>
+                                            
+                                            <ol>
+                                                <li id="link-aula8.1"><a href="#aula8.1" onclick="mostrarAtivo(this);">Aula 8.1: Listas Parte 1</a></li>
+                                                <li id="link-aula8.2"><a href="#aula8.2" onclick="mostrarAtivo(this);">Aula 8.2: Listas Parte 2</a></li>
+                                                <li id="link-aula8.3"><a href="#aula8.3" onclick="mostrarAtivo(this);">Aula 8.3: Listas Parte 3</a></li>
+                                                <li id="link-aula8.4"><a href="#aula8.4" onclick="mostrarAtivo(this);">Aula 8.4: Listas Parte 4</a></li>
+                                                <li id="link-aula8.5"><a href="#aula8.5" onclick="mostrarAtivo(this);">Aula 8.5: Listas Parte 5</a></li>
+                                            </ol>
+                
+                                            <ul>
+                                                <li id="link-aula9">Aula 9: Sublistas</li>
+                                            </ul>
+                                            
+                                                <ol>
+                                                    <li id="link-aula9.1"><a href="#aula9.1" onclick="mostrarAtivo(this);">Aula 9.1: Sublistas Parte 1</a></li>
+                                                    <li id="link-aula9.2"><a href="#aula9.2" onclick="mostrarAtivo(this);">Aula 9.2: Sublistas Parte 2</a></li>
+                                                </ol>
+                
+                                        </div>
+                                    </div>
+                
+                              
+                                </div>
+                            </div>
+                        </ul>
+                        
+                        <ul class="side-nav " id="menu-mobile" style="background: #dddddd; ">
+                            <div class = 'subnivel'>
+                                <a align = 'center' href="detalhescursos.html" style="background: #343a40;"><b>
+                                    Introdução a Programação com Python
+                                </b></a>
+                                        
+                                <ol class = 'sub'>
+                                    <li id="link-apostila"><a href="#apostila" onclick="mostrarAtivo(this);">Apostila</a></li>
+                                    <li id="link-unidade"><a href="#unidade" onclick="mostrarAtivo(this);">1º Modulo: Sumário</a></li>
+                                </ol>
+                                
+                                <button align = 'center' class="dropdown-btn"  style="width: 100%;" >1º Modulo: Aulas .
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-container">
+                                        <li id="link-aula1"><a href="#aula1" onclick="mostrarAtivo(this);">Aula 1</a></li>
+                                        <li id="link-atividade1"><a href="#atividade1" onclick="mostrarAtivo(this);">Atividade 1</a></li>
+                                        <li id="link-aula1.2"><a href="#aula1.2" onclick="mostrarAtivo(this);">Aula 1.2</a></li>
+                                        <li id="link-aula1.3"><a href="#aula1.3" onclick="mostrarAtivo(this);">Aula: 1.3</a></li>
+                                        <li id="link-aula2"><a href="#aula2" onclick="mostrarAtivo(this);">Aula 2</a></li>
+                                        <li id="link-dica01"><a href="#dica01" onclick="mostrarAtivo(this);">Dica 01</a></li>
+                                </div>
+       
+                                <ol class = 'sub'>
+                                    <li id="link-unidade2"><a href="#unidade2" onclick="mostrarAtivo(this);">2º Modulo: Sumário</a></li>
                                 </ol>
 
-                        </div>
+                                <button align = 'center' class="dropdown-btn"  style="width: 100%;" >2º Modulo: Aulas .
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-container">
+                                    <li id="link-aula3"><a href="#aula3.1" onclick="mostrarAtivo(this);">Aula 3.1</a></li>
+                                    <li id="link-aula3.2"><a href="#aula3.2" onclick="mostrarAtivo(this);">Aula 3.2</a></li>
+                                    <li id="link-aula3.3"><a href="#aula3.3" onclick="mostrarAtivo(this);">Aula 3.3</a></li>      
+    
+                                    <li id="link-aula4.1"><a href="#aula4.1" onclick="mostrarAtivo(this);">Aula 4.1</a></li>
+                                    <li id="link-aula4.2"><a href="#aula4.2" onclick="mostrarAtivo(this);">Aula 4.2</a></li>
+                                
+                                    <li id="link-aula5.1"><a href="#aula5.1" onclick="mostrarAtivo(this);">Aula 5.1</a></li>
+                                    <li id="link-aula5.1.2"><a href="#aula5.1.2" onclick="mostrarAtivo(this);">Aula 5.1.2</a></li>
+                                    <li id="link-aula5.2"><a href="#aula5.2" onclick="mostrarAtivo(this);">Aula 5.2</a></li>
+                                
+                                    <li id="link-aula6.1"><a href="#aula6.1" onclick="mostrarAtivo(this);">Aula 6.1</a></li>
+                                    <li id="link-aula6.2"><a href="#aula6.2" onclick="mostrarAtivo(this);">Aula 6.2</a></li>
 
-                        <ol>
-                            <li id="link-unidade3"><a href="#unidade3" onclick="mostrarAtivo(this);">3º Modulo: Projetos</a></li>
-                        </ol>
+                                    <li id="link-aula7.1"><a href="#aula7.1" onclick="mostrarAtivo(this);">Aula 7.1</a></li>
+                                    <li id="link-aula7.2.1"><a href="#aula7.2.1" onclick="mostrarAtivo(this);">Aula 7.2.1</a></li>
+                                    <li id="link-aula7.2.2"><a href="#aula7.2.2" onclick="mostrarAtivo(this);">Aula 7.2.2</a></li>       
+                                
+                                    <li id="link-aula8.1"><a href="#aula8.1" onclick="mostrarAtivo(this);">Aula 8.1</a></li>
+                                    <li id="link-aula8.2"><a href="#aula8.2" onclick="mostrarAtivo(this);">Aula 8.2</a></li>
+                                    <li id="link-aula8.3"><a href="#aula8.3" onclick="mostrarAtivo(this);">Aula 8.3</a></li>
+                                    <li id="link-aula8.4"><a href="#aula8.4" onclick="mostrarAtivo(this);">Aula 8.4</a></li>
+                                    <li id="link-aula8.5"><a href="#aula8.5" onclick="mostrarAtivo(this);">Aula 8.5</a></li>
+            
+                                    <li id="link-aula9.1"><a href="#aula9.1" onclick="mostrarAtivo(this);">Aula 9.1</a></li>
+                                    <li id="link-aula9.2"><a href="#aula9.2" onclick="mostrarAtivo(this);">Aula 9.2</a></li>
+                                </div>
+            
+                            </div>
+        
+                            <script>
+                                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                                var dropdown = document.getElementsByClassName("dropdown-btn");
+                                var i;
+                                
+                                for (i = 0; i < dropdown.length; i++) {
+                                    dropdown[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var dropdownContent = this.nextElementSibling;
+                                    if (dropdownContent.style.display === "block") {
+                                    dropdownContent.style.display = "none";
+                                    } else {
+                                    dropdownContent.style.display = "block";
+                                    }
+                                    });
+                                }
+                            </script>                  
+                        </ul>
 
-                        <div class="box_sumario">
-                            <h2>Título 3</h2>
-                            <p>Este é um exemplo de texto que será mostrado ao clicar no Título 3, aqui você pode usar qualquer tag html, como inserir imagens, links, textos, etc.</p>
-                        </div>
                     </div>
-                    </div>
-                </nav>
+                </div>
+            </nav>
         </header>
 
         <section id="corpo">
@@ -506,6 +595,6 @@
             </section>
 
         </section>
-
+      
 </body>
 </html>

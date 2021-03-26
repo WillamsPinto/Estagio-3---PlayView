@@ -39,4 +39,8 @@ $(document).ready(function(){
         .siblings('span').next('.tgl:visible').prev()
         .toggleText('Mostrar','Esconder')
         });
-        })
+    })
+
+$(function(){
+    $(".button-collapse").sideNav();
+});
