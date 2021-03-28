@@ -101,18 +101,15 @@ ol.sub a{
   width: 100%;
   cursor: pointer;
   outline: none;
-  line-height: 3rem;
+  line-height: 3rem; 
 }
-
  
 ol.sub li a:hover {
   color: black;
 }
 
-
 .active {
-  background-color: #cf9f51;
-  color: white;
+  color: #cf9f51;
 }
 
 .dropdown-btn {

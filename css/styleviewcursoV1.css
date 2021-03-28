@@ -1,99 +1,59 @@
 @charset "UTF-8";
 
-.principal {
-    background:#fff; 
+section#corpo{
+    background: #d3d3d3;
 }
 
-embed{
-    height: 400px;
-    width: 900px;
-    margin-left: 2%;
-}
+/* TAMANHO PARA TELA DE CELULAR */
+@media screen and (min-width: 900px) {
+    .espaco{
+      margin: 0 50px 10% 30%;
+      height: 100%;
+    } 
+  }
 
-.box{
-    position: absolute;
-    top:5%;
-    right:10px;
-    width:70%;
-    height:70%;
-    background: #ffffff;
-}
+/* TAMANHO PARA TELA DE PC */
+@media screen and (max-width: 900px) {
+    .espaco{
+      padding: 2rem;
+      height: 100%;
+    }
 
-.box h2{
-    font-size:20px;
-    padding:10px;
-}
-.box p{
-    font-size:12px;
-    padding:10px;
-}
-.content{
-    background-color: #ffffff;
-    min-width: 100%;
+    embed{
+        height: 600px;
+        width: 100%;
+    }
+  }
+
+.corpo {
+    background: #fff;
     height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5rem;
+    text-align:center;
+  }
+    
+  .corpo .closebtn {
     position: absolute;
-    margin-left:-101%;
-    -webkit-transition: margin-left .8s ease-in-out;
-    -moz-transition: margin-left .8s ease-in-out;
-    -o-transition: margin-left .8s ease-in-out;
+    top: 4rem;
+    right: 1rem;
+    text-decoration: none;
+    color: #1E90FF;
+    display: block;
     transition: margin-left .8s ease-in-out;
-}
-.content:target{
-    margin-left:0;
-}
-#home{
-    margin-left:0;
-}
+  }
 
-div.videoaula iframe{
-    margin-left: 20%;
-}
-
-/*Parte antiga*/
-hgroup#infoUnidade{
-    background-color: #dddddd;
-    margin:50px auto 50px auto;
-}
-
-section#corpo p{
-    height: 100%;
-    text-align: justify;
-    font-size: 12pt;
-    padding: 10px 10px 10px 10px;
-}
-
-section#corpo h1{
+ 
+section#corpo h4{
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    padding: 10px 10px 10px 10px;
-}
-
-section#corpo h1,h4,h5,h6{
-
-    padding: 10px 10px 10px 10px;
+    border-radius:3px;
+    padding: 10px;
     background-color: #dddddd;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
-}
-
-label{
-    padding: 10px;
-    padding-left: 38px;
-    position: relative;
-    font-size: 1em;
-    line-height: normal;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: inline-block;
-    clear: both;
-    margin-bottom: 10px;
-    border: 2px solid #e4e4e4;
-    border-radius: 3px;
-    padding: 10px;
-    width: 100%;
-    color: #313131;
-    font: italic 300 1rem/1.6rem Georgia,Cambria,"Times New Roman",Times,serif;
-    margin-bottom: 5px;
-    text-shadow: 0 1px rgba(255,255,255,0.4);
-    -webkit-font-smoothing: antialiased;
 }
