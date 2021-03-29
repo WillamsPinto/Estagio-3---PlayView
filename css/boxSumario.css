@@ -183,22 +183,29 @@ ol li.dica, .subnivel li.dica  {
 #aula4.1:target ~ header #link-aula4.1 a,
 #atividade7:target ~ header #link-atividade7 a,
 #aula4.2:target ~ header #link-aula4.2 a,
-#atividade7:target ~ header #link-atividade7 a,
+#atividade8:target ~ header #link-atividade8 a,
 #aula5.1:target ~ header #link-aula5.1 a,
 #aula5.1.2:target ~ header #link-aula5.1.2 a,
+#atividade9:target ~ header #link-atividade9 a,
 #aula5.2:target ~ header #link-aula5.2 a,
+#atividade10:target ~ header #link-atividade10 a,
 #aula6.1:target ~ header #link-aula6.1 a,
 #aula6.2:target ~ header #link-aula6.2 a,
+#atividade11:target ~ header #link-atividade11 a,
 #aula7.1:target ~ header #link-aula7.1 a,
+#atividade12:target ~ header #link-atividade12 a,
 #aula7.2.1:target ~ header #link-aula7.2.1 a,
 #aula7.2.2:target ~ header #link-aula7.2.2 a,
+#atividade13:target ~ header #link-atividade13 a,
 #aula8.1:target ~ header #link-aula8.1 a,
 #aula8.2:target ~ header #link-aula8.2 a,
 #aula8.3:target ~ header #link-aula8.3 a,
 #aula8.4:target ~ header #link-aula8.4 a,
 #aula8.5:target ~ header #link-aula8.5 a,
+#atividade14:target ~ header #link-atividade14 a,
 #aula9.1:target ~ header #link-aula9.1 a,
-#aula9.2:target ~ header #link-aula9.2 a{
+#aula9.2:target ~ header #link-aula9.2 a,
+#atividade15:target ~ header #link-atividade15 a{
     background: #333;
 }
 
