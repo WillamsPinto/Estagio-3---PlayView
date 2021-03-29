@@ -101,14 +101,39 @@ div#sumario{
 }
 
 ol.sub a{
-  color: #333;
   text-decoration: none;
   font: 10px, "Comic Sans MS", cursive;
-  color: #818181;
+  color: black;
   width: 100%;
   cursor: pointer;
   outline: none;
   line-height: 3rem; 
+}
+
+ol li.atividade, .subnivel li.atividade {
+  background-color: #3CB371;
+}
+
+ol li.dica, .subnivel li.dica  {
+  background-color:  #cf9f51;
+}
+
+.subnivel li.atividade a, .subnivel li.dica a {
+  padding-left: 35px;
+  font-weight: 500;
+}
+
+.subnivel li a:link 
+{ 
+ text-decoration:none; 
+} 
+
+.subnive{
+  line-height: 2rem;
+  margin: 0; 
+  padding: 0;
+  font-size: 10.5px;
+  color: #cf9f51;
 }
 
 .dropdown-btn {
@@ -120,14 +145,13 @@ ol.sub a{
   cursor: pointer;
   outline: none;
   background:#4682B4; 
-
 }
 
 .dropdown-container li a {
   width: 100%;
-  color:#4682B4; 
-  padding-left: 2px;
+  padding-left: 25px;
   outline: none;
+  font-weight: lighter;
 }
 
 .fa-caret-down {

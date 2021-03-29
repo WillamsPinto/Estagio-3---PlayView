@@ -21,6 +21,7 @@ section#corpo{
     }
 
     section#corpo h4{
+        top: 2rem;
         font-size: 25px;
     }
   }
@@ -87,11 +88,11 @@ section#corpo h6{
     width: 100%;
 }
 
-section#corpo h4.atividade, ol li.atividade {
+section#corpo h4.atividade {
     background-color: #3CB371;
 }
 
-section#corpo h4.dica, ol li.dica {
+section#corpo h4.dica {
     background-color:  #cf9f51;
 }
 
@@ -102,7 +103,7 @@ section#corpo h4.dica, ol li.dica {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     padding: 20px;
     width: 100px;
     transition: all 0.5s;
@@ -134,11 +135,4 @@ section#corpo h4.dica, ol li.dica {
     opacity: 1;
     right: 0;
     
-  }
-  
-  #baixar .button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
   }
