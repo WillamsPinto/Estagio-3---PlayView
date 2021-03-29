@@ -54,7 +54,7 @@ div#sumario{
 
 .geral ul li{
     text-align:center;
-    color: green;
+    color: #cf9f51;
 }
 
 #box_geral span{
@@ -62,12 +62,21 @@ div#sumario{
     cursor:pointer; 
     font-size:16px; 
     text-align:center;
-    background:#4682B4; 
     color:#000; 
     margin: 5px  0; 
     border-radius:3px;
     line-height: 3rem;
     height: 50%;
+}
+
+#box_geral span{
+  background: #4682B4;
+}
+
+.geral ol li:hover, .geral li a:hover {
+  background: none;
+  color: black;
+  background: #A9A9A9;
 }
 
 .subnivel b{
@@ -102,14 +111,6 @@ ol.sub a{
   cursor: pointer;
   outline: none;
   line-height: 3rem; 
-}
- 
-ol.sub li a:hover {
-  color: black;
-}
-
-.active {
-  color: #cf9f51;
 }
 
 .dropdown-btn {

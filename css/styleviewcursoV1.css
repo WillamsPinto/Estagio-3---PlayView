@@ -86,3 +86,11 @@ section#corpo h6{
     height: 800px;
     width: 100%;
 }
+
+section#corpo h4.atividade, ol li.atividade {
+    background-color: #3CB371;
+}
+
+section#corpo h4.dica, ol li.dica {
+    background-color:  #cf9f51;
+}

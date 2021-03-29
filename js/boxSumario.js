@@ -3,17 +3,17 @@ return this.html(this.html().replace(new RegExp("("+a+"|"+b+")"),function(x){ret
 }
 
 $(document).ready(function(){
-$('.box_1modulo').before('<span>1º Modulo: Mostrar conteúdo</span>');
-$('.box_1modulo').css('display', 'none')
-$('span', '#box_geral').click(function() {
-$(this).next().slideToggle('slow')
-.siblings('.tgl:visible').slideToggle('fast');
-// aqui começa o funcionamento do plugin
-$(this).toggleText('Mostrar','Esconder')
-.siblings('span').next('.tgl:visible').prev()
-.toggleText('Mostrar','Esconder')
-});
-})
+    $('.box_1modulo').before('<span>1º Modulo: Mostrar conteúdo</span>');
+    $('.box_1modulo').css('display', 'none')
+    $('span', '#box_geral').click(function() {
+    $(this).next().slideToggle('slow')
+    .siblings('.tgl:visible').slideToggle('fast');
+    // aqui começa o funcionamento do plugin
+    $(this).toggleText('Mostrar','Esconder')
+    .siblings('span').next('.tgl:visible').prev()
+    .toggleText('Mostrar','Esconder')
+    });
+    })
 
 $(document).ready(function(){
     $('.box_2modulo').before('<span>2º Modulo: Mostrar conteúdo</span>');
