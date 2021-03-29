@@ -6,7 +6,6 @@ div#sumario{
     z-index: 100;
 }
 
-
 .geral{
     position: absolute;
     max-width: 600px;
@@ -100,7 +99,6 @@ div#sumario{
   border-left:0;
   border-right:0;
 }
-
 
 ol.sub a{
   color: #333;
