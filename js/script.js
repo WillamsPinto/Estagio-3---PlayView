@@ -17,13 +17,19 @@ function videoController(){
 }
 
 function openDiv(id) {
+    closeDiv();
     var el = document.getElementById(id);
     el.style.width = "100%";
 }
-  
-function closeDiv(id) {
-    var el = document.getElementById(id);
-    el.style.width = "0";
+
+function closeDiv() {  
+    
+    var div = {0: 'apostila', 1: "unidade", 2: 'aula1', 3: 'atividade1', 4: 'aula1_2', 5:'atividade2', 6: 'aula1_3', 7:'atividade3', 8: 'aula2'};
+
+    for (var cont = 0; cont in div; cont++){
+        var el =document.getElementById(div[cont]);
+        el.style.width = "0";
+    }
 }
 
 function mostrarAtivo(tag){
@@ -31,7 +37,15 @@ function mostrarAtivo(tag){
     var tag_a = tag_li.getElementsByTagName('a');
     for (i=0; i<tag_a.length; i++ ){
        tag_a[i].style.color = "";
+       tag_a[i].classList.remove("marcador");
     }
        tag.style.color = "#ff0000";
-    }
+       tag.className = "marcador";
+ 
+}
+
+function desativo(id){
+    var tag_a = document.getElementById(id);
+    tag_a.style.color = "";
+}
 

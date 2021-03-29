@@ -131,7 +131,6 @@ ol.sub li a:hover {
   outline: none;
 }
 
-
 .fa-caret-down {
   float: right;
   padding-right: 8px;
@@ -178,4 +177,10 @@ ol.sub li a:hover {
 #aula9.1:target ~ header #link-aula9.1 a,
 #aula9.2:target ~ header #link-aula9.2 a{
     background: #333;
+}
+
+.marcador::before  {
+  content: "•";
+  padding-right: 2px;
+  text-align: justify;
 }
