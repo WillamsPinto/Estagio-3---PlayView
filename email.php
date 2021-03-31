@@ -8,8 +8,8 @@ $mensagem = addslashes($_POST(['mensagem']));
 
 $to = "willamspinto18@gmail.com";
 $subject = "Contato - PlayView";
-$body = "Nome: ".$nome. "\r\n"
-        "E-mail: ".$email. "\r\n"
+$body = "Nome: ".$nome. "\r\n".
+        "E-mail: ".$email. "\r\n".
         "Mensagem: ".$mensagem;
 
 $header = "From: leia7654@uorak.com"."\r\n"."Reply-to:".$email."\r\n"."X=Mailer:PHP/".phpversion();
