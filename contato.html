@@ -5,22 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-            
-    
+        <script  type="text/javascript" src="js/script.js"></script>    
     
         <!--------------------- Bootstrap ---------------------------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet"/>
     
         <!------------------------------ JQuery -------------------------------->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     
         <title>PlayView</title>
@@ -45,22 +43,63 @@
                 </div>
             </nav>
         </header>
-    
-        <div id="conteudo">
-            <h1>Formulário de Contato</h1>
+      
+        <section  id="conteudo" >
+            <div id= "texto" class="col col-sm-8 col-md-5 col-lg-4 mx-auto px-0 mb-5">
+                <div align='center'><h3 class="rounded-0 fa fa-whatsapp" style="font-size: 25px;"> Formulário de Contato</h3></div>
+            </br>
+                <form action="contato.html" method="POST" action="email.php">
+                    <div class="form-group mb-2">
+                        <label>Nome Completo</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0 fa fa-user"></span>
+                            </div>
+                            <input id="nome" type="text" class="form-control rounded-0" required placeholder="Nome Completo" checked>
+                        </div>
+                        <div id="campo_nome" style="display:none;color:red">
+                            * Campo Obrigatório
+                        </div>
+                    </div>
 
-            <form method="POST" action="email.php">
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="Nome Completo"><br>
+                    <div class="form-group mb-2">
+                        <label>E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0 fa fa-pencil-square-o"></span>
+                            </div>
+                            <input id="email" type="email" class="form-control rounded-0" placeholder="E-mail" checked>
+                        </div>
+                        <div id="campo_email" style="display:none;color:red">
+                            * Campo Obrigatório
+                        </div>
+                    </div>
 
-                <label>E-mail</label>
-                <input type="text" name="email" placeholder="E-mail"><br>
+                    <div class="form-group mb-2">
+                        <label>Mensagem</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend input-group-text rounded-0" >
+                                <span class=" fa fa-comments-o"></span>
+                            </div>
+                            <textarea id="mens" type="text" placeholder="Insira sua mensagem" cols="50" rows="4" class="form-control rounded-0" checked></textarea>
+                        </div>
+                        <div id="campo_mens" style="display:none;color:red">
+                  
+                            * Campo Obrigatório
+                        </div>
+                    </div>
 
-                <label>Mensagem</label>
-                <textarea name="mensagem" placeholder="Insira sua mensagem" rows="4" cols="50"></textarea><br>
+                    </br>
+                    <div class="form-group mb-2">
+                        <div class="col px-0">
+                            <button onclick="acessarWhatsApp();" type="button" class="btn btn-info">Enviar</button>
+                            <button id='reset' type="Reset" onclick="limpar();" value="Apagar tudo" type="button" class="btn btn-info">Limpar</button>
+                        </div>
+                    </div>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+                </form>
+
+            </div>
+        </section>
     </body>
 </html>
