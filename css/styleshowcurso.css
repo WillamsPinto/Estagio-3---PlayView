@@ -50,9 +50,8 @@ div.infocurso img#linha {
 }
 
 iframe{
-   min-width: 80%;
-   width:560;
-   height:315; 
+   width: 80%;
+   max-width: 640px;
 }
 
 div.descricao p{
