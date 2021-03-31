@@ -1,10 +1,10 @@
 <?php
 
-if(isset($_POST(['email'])) && (!empty($_POST(['email'])))){
+if(isset($_POST['email']) && (!empty($_POST['email']))){
 
-$nome = addslashes($_POST(['nome']));
-$email = addslashes($_POST(['email']));
-$mensagem = addslashes($_POST(['mensagem']));
+$nome = addslashes($_POST['nome']);
+$email = addslashes($_POST['email']);
+$mensagem = addslashes($_POST['mensagem']);
 
 $to = "willamspinto18@gmail.com";
 $subject = "Contato - PlayView";
