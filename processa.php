@@ -12,9 +12,9 @@
 		
         require 'vendor/autoload.php';
 
-        $from = new SendGrid\Email(null, "willamspinto1245@gmail.com");
+        $from = new SendGrid\Email(null, "willamspinto18@gmail.com");
         $subject = "Mensagem de contato";
-        $to = new SendGrid\Email(null, "willams.pinto@dcx.ufpb.br");
+        $to = new SendGrid\Email(null, "willamspinto18@gmail.com");
         $content = new SendGrid\Content("text/html", "Olá Admin, <br><br>Nova mensagem de contato<br><br>Nome: $nome<br>Email: $email <br>Mensagem: $mensagem");
         $mail = new SendGrid\Mail($from, $subject, $to, $content);
         
