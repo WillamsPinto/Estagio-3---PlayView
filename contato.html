@@ -47,22 +47,20 @@
         </header>
     
         <div id="conteudo">
-            <table style="margin:20px;">
-                <h4 style = 'padding: 10px;'> Explore os Cursos </h4>
-                <p></p>
-                <tr>
-                    <td>
-                        <div class="curso"  align="center">
-                            <a href="detalhescursos.html#Python">
-                                <img src= "./img/icon/python.png" id ="curso">                                
-                                <b><p>Python</p></b>                             
-                                <p id='curso'> Aprenda Algoritmos e Lógica de Programação de forma simples com 10 aulas bem descontraídas.</p>
-                                <h5>Mais Detalhes</h5>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <h1>Formulário de Contato</h1>
+
+            <form method="POST" action="processa.php">
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Nome Completo"><br>
+
+                <label>E-mail</label>
+                <input type="text" name="email" placeholder="E-mail"><br>
+
+                <label>Mensagem</label>
+                <textarea name="mensagem" placeholder="Insira sua mensagem" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </body>
 </html>
